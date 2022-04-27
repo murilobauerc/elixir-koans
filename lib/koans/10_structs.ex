@@ -54,6 +54,6 @@ defmodule Structs do
 
   koan "Use the put_in macro with atoms to replace a nested value in a non-struct" do
     airline = %{plane: %{maker: :boeing}, name: "Southwest"}
-    assert put_in(airline[:plane][:maker], :cessna) == ___
+    assert put_in(airline[:plane][:maker], :cessna) == %{name: "Southwest", plane: %{maker: :cessna}}
   end
 end
