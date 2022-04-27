@@ -4,7 +4,7 @@ defmodule Processes do
   @intro "Processes"
 
   koan "You are a process" do
-    assert Process.alive?(self()) == ___
+    assert Process.alive?(self()) == true
   end
 
   koan "You can ask a process to introduce itself" do
